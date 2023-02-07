@@ -31,11 +31,11 @@ img {
 }
 
 ul {
-    margin-left: 100px;
+    margin-left: 70px;
     margin-right: 100px;
     display: flex;
     flex-direction: column;
-    
+    list-style: none;
 }
 
 h2 {
@@ -47,4 +47,42 @@ li {
     padding-bottom: 10px;
     font-size: 20px;
     color:aqua;
+    margin: 0;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    display: none;
+    text-align: center;
+    margin: auto;
+}
+
+span:hover + .text{
+    display: block;
+    color: gold;
+    background-color: rgb(205, 6, 245);
+}
+
+span {
+    display: flex;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color:rgb(205, 6, 245);
+    background-color: black;
+}
+
+.tribute-link {
+    display: block;
+    text-align: center;
 }
